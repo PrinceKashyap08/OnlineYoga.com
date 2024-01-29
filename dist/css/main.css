@@ -322,6 +322,49 @@ p {
 }
 
 /* ----------------- /Beginner-style ---------------------- */
+/* ----------------- Online-style ---------------------- */
+.Online {
+  width: 100%;
+  height: auto;
+  margin: 50px 0;
+  margin-top: 80px;
+}
+.Online .Online-container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 40px 30px;
+  display: grid;
+  place-items: center;
+}
+.Online .Online-container img {
+  height: 400px;
+  border-radius: 20px;
+}
+.Online .Online-container h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 4rem;
+}
+.Online .Online-container .Online-btn {
+  padding: 12px 30px;
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: 0.5px;
+  border: 1px solid #26c5ab;
+  background-color: #26c5ab;
+  transform: 0.5s ease;
+  border-radius: 50px;
+  background-color: #f46150;
+  border: 1px solid #f46150;
+}
+.Online .Online-container .Online-btn:hover {
+  color: #26c5ab;
+  background-color: #ffffff;
+  color: #f46150;
+}
+
+/* ----------------- /Online-style ---------------------- */
 @media (max-width: 1050px) {
   .Important .Important-title p {
     width: 60%;
@@ -420,6 +463,15 @@ p {
   .beginner .beginner-container .beginnerRight img {
     border-radius: 20px 20px 0 0;
   }
+  .Online .Online-container {
+    padding: 50px 20px;
+  }
+  .Online .Online-container img {
+    height: 350px;
+  }
+  .Online .Online-container h2 {
+    font-size: 4rem;
+  }
 }
 @media (max-width: 568px) {
   .Important .Important-title h2 {
@@ -495,6 +547,17 @@ p {
   .beginner .beginner-container .beginnerLeft h2 {
     font-size: 4rem;
     padding-bottom: 10px;
+  }
+  .Online .Online-container {
+    padding: 50px 10px;
+    display: grid;
+    place-items: center;
+  }
+  .Online .Online-container img {
+    height: 300px;
+  }
+  .Online .Online-container h2 {
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 450px) {
@@ -595,6 +658,18 @@ p {
     font-size: 1.4rem;
   }
   .beginner .beginner-container .beginnerLeft p:nth-child(4) {
+    font-size: 1.4rem;
+  }
+  .Online .Online-container {
+    padding: 0px 10px;
+  }
+  .Online .Online-container img {
+    height: 250px;
+  }
+  .Online .Online-container h2 {
+    font-size: 2.8rem;
+  }
+  .Online .Online-container .Online-btn {
     font-size: 1.4rem;
   }
 }/*# sourceMappingURL=main.css.map */

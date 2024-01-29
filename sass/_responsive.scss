@@ -163,6 +163,20 @@
             }
         }
     }
+
+    .Online {
+        .Online-container {
+            padding: 50px 20px;
+
+            img {
+                height: 350px;
+            }
+
+            h2 {
+                font-size: 4rem;
+            }
+        }
+    }
 }
 
 @media (max-width: 568px) {
@@ -283,6 +297,22 @@
                     font-size: 4rem;
                     padding-bottom: 10px;
                 }
+            }
+        }
+    }
+
+    .Online {
+        .Online-container {
+            padding: 50px 10px;
+            display: grid;
+            place-items: center;
+
+            img {
+                height: 300px;
+            }
+
+            h2 {
+                font-size: 3.5rem;
             }
         }
     }
@@ -442,6 +472,24 @@
                 p:nth-child(4) {
                     font-size: 1.4rem;
                 }
+            }
+        }
+    }
+
+    .Online {
+        .Online-container {
+            padding: 0px 10px;
+
+            img {
+                height: 250px;
+            }
+
+            h2 {
+                font-size: 2.8rem;
+            }
+
+            .Online-btn {
+                font-size: 1.4rem;
             }
         }
     }
