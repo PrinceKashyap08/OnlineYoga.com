@@ -96,6 +96,21 @@
             gap: 30px;
         }
     }
+
+    .shop {
+        .shop-container {
+            padding: 50px 30px;
+            grid-template-columns: 1.5fr 1.5fr;
+            gap: 50px;
+
+            .shopLeft {
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -225,6 +240,42 @@
             grid-template-columns: repeat(1, 1fr);
             row-gap: 80px;
             padding: 50px 20px;
+        }
+    }
+
+    .testimonial{
+        .testimonial-container{
+            grid-template-columns: repeat(2,1fr);
+            .testimonial-items{
+                p{
+                    font-size: 1.6rem;
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .shop {
+        .shop-container {
+            padding: 50px 20px;
+            grid-template-columns: 1fr;
+            gap: 50px;
+
+            .shopLeft {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .shopRight {
+                h2 {
+                    font-size: 4rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
         }
     }
 }
@@ -399,6 +450,50 @@
         .choose-container {
             row-gap: 50px;
             padding: 50px 10px;
+        }
+    }
+
+    .testimonial{
+        margin: 0;
+        padding-bottom: 0;
+        .testimonial-title{
+            padding: 0 10px;
+            h2{
+                font-size: 3.8rem;
+            }
+        }
+        .testimonial-container{
+            padding: 0 10px;
+            padding-top: 50px;
+            grid-template-columns: repeat(1,1fr);
+            .testimonial-items{
+                p{
+                    font-size: 1.6rem;
+                    width: 95%;
+                }
+            }
+        }
+    }
+
+    .shop {
+        .shop-container {
+            padding: 50px 10px;
+
+            .shopLeft {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .shopRight {
+                h2 {
+                    font-size: 4rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
         }
     }
 }
@@ -639,6 +734,57 @@
                     .choose-btn {
                         font-size: 1.4rem;
                     }
+                }
+            }
+        }
+    }
+
+    .testimonial{
+        .testimonial-title{
+            padding: 0 10px;
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .testimonial-container{
+            .testimonial-items{
+                p{
+                    font-size: 1.4rem;
+                    width: 95%;
+                }
+                .testimonial-info{
+                    h3{
+                        font-size: 2.2rem;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .shop {
+        .shop-container {
+            padding: 50px 10px;
+
+            .shopLeft {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .shopRight {
+                h2 {
+                    font-size: 3.2rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                }
+
+                .shop-btn {
+                    font-size: 1.4rem;
                 }
             }
         }

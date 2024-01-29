@@ -445,3 +445,109 @@
     }
 }
 /* ----------------- /Choose-style ---------------------- */
+
+/* ----------------- Testimonial-style ---------------------- */
+.testimonial{
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 50px 0;
+    .testimonial-title{
+        max-width: 1150px;
+        margin: auto;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .testimonial-container{
+        max-width: 1150px;
+        margin: auto;
+        padding: 0 30px;
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        gap: 30px;
+        .testimonial-items{
+            .testimonialTop-img{
+                width: 50px;
+                margin: auto;
+                height: 50px;
+                background-color: $primary;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            p{
+                font-size: 1.6rem;
+                width: 80%;
+                margin: auto;
+                padding: 15px 0;
+            }
+            .testimonial-info{
+                .testimonialBottom-img{
+                    width: 60px;
+                    margin: auto;
+                    height: 60px;
+                    border-radius: 50%;
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+/* ----------------- /Testimonial-style ---------------------- */
+
+/* ----------------- Shop-style ---------------------- */
+.shop {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+
+
+    .shop-container {
+        max-width: 1150px;
+        margin: auto;
+        padding: 50px 30px;
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr;
+        gap: 50px;
+        align-items: center;
+
+        .shopLeft {
+            img {
+                width: 90%;
+                height: 50%;
+                border-radius: 20px;
+            }
+        }
+
+        .shopRight {
+            p {
+                font-size: 1.8rem;
+                padding-top: 10px;
+                padding-bottom: 30px;
+                color: $dark-gray;
+            }
+
+            .shop-btn {
+                @include btn;
+                background-color: $primary;
+                border: 1px solid $primary;
+
+                &:hover {
+                    @include Aqua($primary);
+                }
+            }
+        }
+    }
+}
+/* ----------------- /Shop-style ---------------------- */
