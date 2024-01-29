@@ -190,3 +190,95 @@
     }
 }
 /* ----------------- /Class-style ---------------------- */
+
+/* ----------------- health-style ---------------------- */
+.health {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    background-color: $primary-light;
+    padding: 80px 0;
+    padding-bottom: 280px;
+
+    .health-container {
+        padding: 50px 30px;
+        max-width: 1150px;
+        margin: auto;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        gap: 30px;
+
+        img:nth-child(1) {
+            width: 70px;
+        }
+
+        h2:nth-child(2) {
+            font-size: 7rem;
+            color: $primary;
+        }
+
+        img:nth-child(3) {
+            width: 80%;
+            margin: auto;
+            border-radius: 20px;
+        }
+
+        h2:nth-child(4) {
+            font-size: 7rem;
+            width: 65%;
+            margin: auto;
+            color: $primary;
+        }
+    }
+}
+/* ----------------- /health-style ---------------------- */
+
+/* ----------------- Beginner-style ---------------------- */
+.beginner {
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 30px;
+    margin-top: -280px;
+
+    .beginner-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: $white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 23px -3px rgba(0, 0, 0, 0.1);
+
+        .beginnerLeft {
+            padding: 100px 50px;
+            display: grid;
+            place-items: start;
+
+            p {
+                font-size: 1.8rem;
+                color: $dark-gray;
+            }
+
+            p:nth-child(4) {
+                font-size: 1.6rem;
+                color: $gray;
+                padding-bottom: 10px;
+            }
+
+            .health-btn {
+                @include btn;
+
+                &:hover {
+                    @include Aqua($aquamarine);
+                }
+            }
+        }
+
+        .beginnerRight {
+            img {
+                border-radius: 0 20px 20px 0;
+            }
+        }
+    }
+}
+
+/* ----------------- /Beginner-style ---------------------- */

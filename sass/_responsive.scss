@@ -54,6 +54,23 @@
             }
         }
     }
+
+    .health {
+        .health-container {
+            padding: 50px 30px;
+
+            h2:nth-child(2) {
+                font-size: 6rem;
+                color: $primary;
+            }
+
+            h2:nth-child(4) {
+                font-size: 6rem;
+                width: 80%;
+
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -106,6 +123,43 @@
                     font-size: 1.6rem;
                 }
     
+            }
+        }
+    }
+
+    .health {
+        .health-container {
+            padding: 50px 20px;
+
+            h2:nth-child(2) {
+                font-size: 5rem;
+            }
+
+            h2:nth-child(4) {
+                font-size: 5rem;
+                width: 80%;
+
+            }
+        }
+    }
+
+    .beginner {
+        max-width: 1150px;
+        margin: auto;
+        padding: 0 20px;
+        margin-top: -280px;
+
+        .beginner-container {
+            grid-template-columns: repeat(1, 1fr);
+
+            .beginnerLeft {
+                grid-row: 2/3;
+            }
+
+            .beginnerRight {
+                img {
+                    border-radius: 20px 20px 0 0;
+                }
             }
         }
     }
@@ -190,6 +244,45 @@
             grid-template-columns: repeat(1,1fr);
             .class-items{
                 padding: 140px 20px;
+            }
+        }
+    }
+
+    .health {
+        .health-container {
+            padding: 50px 10px;
+
+            img:nth-child(1) {
+                width: 50px;
+            }
+
+            h2:nth-child(2) {
+                font-size: 4rem;
+            }
+
+            img:nth-child(3) {
+                width: 90%;
+            }
+
+            h2:nth-child(4) {
+                font-size: 4rem;
+                width: 100%;
+
+            }
+        }
+    }
+
+    .beginner {
+        margin-top: -280px;
+
+        .beginner-container {
+            .beginnerLeft {
+                padding: 80px 30px;
+
+                h2 {
+                    font-size: 4rem;
+                    padding-bottom: 10px;
+                }
             }
         }
     }
@@ -293,6 +386,61 @@
                     p{
                         font-size: 1.4rem;
                     }
+                }
+            }
+        }
+    }
+
+    .health {
+        .health-container {
+            padding: 50px 10px;
+
+            img:nth-child(1) {
+                width: 50px;
+
+            }
+
+            h2:nth-child(2) {
+                font-size: 3rem;
+            }
+
+            img:nth-child(3) {
+                width: 95%;
+            }
+
+            h2:nth-child(4) {
+                font-size: 3rem;
+                width: 90%;
+
+            }
+        }
+    }
+
+    .beginner {
+        margin-top: -300px;
+
+        .beginner-container {
+            .beginnerLeft {
+                padding: 60px 30px;
+
+                h2 {
+                    font-size: 3rem;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                }
+
+                .health-btn {
+                    font-size: 1.4rem;
+                }
+
+                p:nth-child(2) {
+                    font-size: 1.4rem;
+                }
+
+                p:nth-child(4) {
+                    font-size: 1.4rem;
                 }
             }
         }
