@@ -129,33 +129,37 @@
 /* ----------------- /Offer-style ---------------------- */
 
 /* ----------------- Class-style ---------------------- */
-.class{
+.class {
     width: 100%;
     height: auto;
     margin: 50px 0;
     padding: 50px 0;
-    .class-title{
+
+    .class-title {
         max-width: 1150px;
         margin: auto;
         padding: 0 30px;
         display: grid;
         grid-template-columns: 1.5fr 1fr;
         grid-gap: 30px;
-        .classRight{
-            p{
+
+        .classRight {
+            p {
                 font-size: 1.6rem;
             }
         }
     }
-    .class-container{
+
+    .class-container {
         max-width: 1150px;
         margin: auto;
         padding: 0 30px;
         padding-top: 80px;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 30px;
-        .class-items{
+
+        .class-items {
             background: url(/image/6336adc3841f513aba02e05a_Classes\ Holder\ .webp);
             background-position: 50%;
             background-repeat: no-repeat;
@@ -164,31 +168,35 @@
             position: relative;
             display: flex;
             align-items: center;
-            .class-overlay{
+
+            .class-overlay {
                 position: absolute;
                 top: -20px;
                 left: 20px;
-                width:65px;
+                width: 65px;
                 height: 60px;
                 background-color: $primary;
                 display: grid;
                 place-items: center;
                 border-radius: 10px;
-                span{
+
+                span {
                     font-size: 1.6rem;
                     color: #fff;
                     font-weight: 500;
                 }
             }
-            .class-info{
-                    p{
-                        font-size: 1.7rem;
-                        color: $dark-gray;
-                    }
+
+            .class-info {
+                p {
+                    font-size: 1.7rem;
+                    color: $dark-gray;
+                }
             }
         }
     }
 }
+
 /* ----------------- /Class-style ---------------------- */
 
 /* ----------------- health-style ---------------------- */
@@ -232,6 +240,7 @@
         }
     }
 }
+
 /* ----------------- /health-style ---------------------- */
 
 /* ----------------- Beginner-style ---------------------- */
@@ -280,6 +289,7 @@
         }
     }
 }
+
 /* ----------------- /Beginner-style ---------------------- */
 
 /* ----------------- Online-style ---------------------- */
@@ -320,6 +330,7 @@
     }
 
 }
+
 /* ----------------- /Online-style ---------------------- */
 
 /* ----------------- Team-style ---------------------- */
@@ -381,6 +392,7 @@
         }
     }
 }
+
 /* ----------------- /Team-style ---------------------- */
 
 /* ----------------- Choose-style ---------------------- */
@@ -444,31 +456,40 @@
         }
     }
 }
+
 /* ----------------- /Choose-style ---------------------- */
 
 /* ----------------- Testimonial-style ---------------------- */
-.testimonial{
+.testimonial {
     width: 100%;
     height: auto;
     margin: 50px 0;
     padding: 50px 0;
-    .testimonial-title{
+
+    .testimonial-title {
         max-width: 1150px;
         margin: auto;
         padding: 0 30px;
         text-align: center;
+
+        h2 {
+            width: 60%;
+            margin: auto;
+        }
     }
-    .testimonial-container{
+
+    .testimonial-container {
         max-width: 1150px;
         margin: auto;
         padding: 0 30px;
         padding-top: 50px;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         text-align: center;
         gap: 30px;
-        .testimonial-items{
-            .testimonialTop-img{
+
+        .testimonial-items {
+            .testimonialTop-img {
                 width: 50px;
                 margin: auto;
                 height: 50px;
@@ -476,34 +497,41 @@
                 border-radius: 50%;
                 display: grid;
                 place-items: center;
-                img{
+
+                img {
                     width: 16px;
                     height: 16px;
                 }
             }
-            p{
+
+            p {
                 font-size: 1.6rem;
                 width: 80%;
+                color: $dark-gray;
                 margin: auto;
                 padding: 15px 0;
             }
-            .testimonial-info{
-                .testimonialBottom-img{
+
+            .testimonial-info {
+                .testimonialBottom-img {
                     width: 60px;
                     margin: auto;
                     height: 60px;
                     border-radius: 50%;
-                    img{
+
+                    img {
                         border-radius: 50%;
                     }
                 }
-                p{
+
+                p {
                     font-size: 1.6rem;
                 }
             }
         }
     }
 }
+
 /* ----------------- /Testimonial-style ---------------------- */
 
 /* ----------------- Shop-style ---------------------- */
@@ -550,4 +578,152 @@
         }
     }
 }
+
 /* ----------------- /Shop-style ---------------------- */
+
+/* ----------------- Newsletter-style ---------------------- */
+.Newsletter {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+
+    .Newsletter-container {
+        max-width: 1150px;
+        margin: auto;
+        padding: 0 30px;
+
+        .Newsletter-wrapper {
+            max-width: 1150px;
+            margin: auto;
+            padding: 100px 30px;
+            background-color: $primary;
+            border-radius: 20px;
+            display: grid;
+            place-items: center;
+
+            h2 {
+                color: #fff;
+                padding-bottom: 30px;
+            }
+
+            form {
+                display: flex;
+                gap: 20px;
+                width: 45%;
+
+                input {
+                    width: 100%;
+                    padding: 12px 25px;
+                    color: #fff;
+                    font-weight: 600;
+                    background-color: transparent;
+                    border: 2px solid #fff;
+                    border-radius: 30px;
+                    outline: none;
+                    font-size: 1.6rem;
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+
+                }
+                .News-btn {
+                    font-size: 1.8rem;
+                    padding: 12px 30px;
+                    border-radius: 30px;
+                    background-color: #fff;
+                    border: 2px solid #fff;
+                    color: $primary;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        color: #fff;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ----------------- /Newsletter-style ---------------------- */
+
+/* ----------------- footer-style ---------------------- */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: $primary-light;
+    padding-top: 250px;
+    margin-top: -150px;
+    .footer-container{
+        max-width: 1150px;
+        margin: auto;
+        padding: 0 30px;
+        display: grid;
+        grid-template-columns: 0.8fr 2fr 1.5fr;
+        grid-gap: 30px;
+        padding-bottom: 50px;
+        .About-foot{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 50px;
+            .About-icon{
+                ul{
+                    display: flex;
+                    gap: 30px;
+                    li{
+                        font-size: 1.8rem;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        .Link-items{
+            ul{
+                display: flex;
+                gap: 50px;
+                a{
+                    font-size: 1.8rem;
+                    color: $dark-gray;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        .Info-items{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 30px;
+            .InfoLeft{
+                p{
+                    font-size: 1.6rem;
+                    width: 80%;
+                }
+            }
+            .InfoRight{
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    .footBottom{
+        .footBottom-container{
+            max-width: 1150px;
+            margin: auto;
+            padding: 30px 30px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            p{
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+/* ----------------- /footer-style ---------------------- */

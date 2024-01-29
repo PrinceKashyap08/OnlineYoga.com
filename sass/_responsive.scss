@@ -96,6 +96,13 @@
             gap: 30px;
         }
     }
+    .testimonial{
+        .testimonial-title{
+            h2{
+                width: 80%;
+            }
+        }
+    }
 
     .shop {
         .shop-container {
@@ -109,6 +116,39 @@
                 }
             }
 
+        }
+    }
+
+    .Newsletter {
+        .Newsletter-container {
+            padding: 0 30px;
+            .Newsletter-wrapper{
+                form{
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+    footer{
+        .footer-container{
+            grid-template-columns: 1fr;
+            gap: 50px;
+            .About-foot{
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .Link-items{
+                ul{
+                    justify-content: center;
+                }
+            }
+            .Info-items{
+                width: 80%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+            }
         }
     }
 }
@@ -244,6 +284,12 @@
     }
 
     .testimonial{
+        .testimonial-title{
+            padding: 0 20px;
+            h2{
+                width: 95%;
+            }
+        }
         .testimonial-container{
             grid-template-columns: repeat(2,1fr);
             .testimonial-items{
@@ -275,6 +321,47 @@
                 p {
                     font-size: 1.6rem;
                 }
+            }
+        }
+    }
+
+    .Newsletter {
+        .Newsletter-container {
+            padding: 0 20px;
+            .Newsletter-wrapper{
+                text-align: center;
+                h2{
+                    font-size: 4rem;
+                }
+                form{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    footer{
+        .footer-container{
+            padding: 0 20px;
+            padding-bottom: 50px; 
+            grid-template-columns: 1fr;
+            gap: 50px;
+            .About-foot{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+            .Link-items{
+                ul{
+                    justify-content: center;
+                }
+            }
+            .Info-items{
+                width: 100%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
             }
         }
     }
@@ -493,6 +580,55 @@
                 p {
                     font-size: 1.6rem;
                 }
+            }
+        }
+    }
+
+    .Newsletter {
+        .Newsletter-container {
+            padding: 0 10px;
+            .Newsletter-wrapper{
+                form{
+                    width: 95%;
+                    flex-direction: column;
+                    gap: 25px;
+                    .News-btn{
+                        width: 150px;
+                        height: 50px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        .footer-container{
+            padding: 0 10px;
+            padding-bottom: 50px;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            .About-foot{
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 30px;
+            }
+            .Link-items{
+                ul{
+                    justify-content: center;
+                    flex-direction: column;
+                    a{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .Info-items{
+                width: 100%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
             }
         }
     }
@@ -784,6 +920,86 @@
                 }
 
                 .shop-btn {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .Newsletter {
+        .Newsletter-container {
+            max-width: 1150px;
+            margin: auto;
+            padding: 0 10px;
+            .Newsletter-wrapper{
+                padding: 60px 30px;
+                form{
+                    width: 95%;
+                    flex-direction: column;
+                    gap: 25px;
+                    .News-btn{
+                        width: 150px;
+                        height: 45px;
+                        margin: auto;
+                        font-size: 1.4rem;
+                    }
+                }
+                h2{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    footer{
+        .footer-container{
+            padding: 0 10px;
+            padding-bottom: 50px;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            .About-foot{
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 30px;
+                .About-icon{
+                    ul{
+                        li{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+            .Link-items{
+                ul{
+                    justify-content: center;
+                    flex-direction: column;
+                    a{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .Info-items{
+                width: 100%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                .InfoLeft{
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+                .InfoRight{
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        .footBottom{
+            .footBottom-container{
+                padding: 30px 10px;
+                p{
                     font-size: 1.4rem;
                 }
             }

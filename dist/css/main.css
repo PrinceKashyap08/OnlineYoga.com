@@ -483,6 +483,10 @@ p {
   padding: 0 30px;
   text-align: center;
 }
+.testimonial .testimonial-title h2 {
+  width: 60%;
+  margin: auto;
+}
 .testimonial .testimonial-container {
   max-width: 1150px;
   margin: auto;
@@ -509,6 +513,7 @@ p {
 .testimonial .testimonial-container .testimonial-items p {
   font-size: 1.6rem;
   width: 80%;
+  color: #212121;
   margin: auto;
   padding: 15px 0;
 }
@@ -572,6 +577,148 @@ p {
 }
 
 /* ----------------- /Shop-style ---------------------- */
+/* ----------------- Newsletter-style ---------------------- */
+.Newsletter {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+}
+.Newsletter .Newsletter-container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 30px;
+}
+.Newsletter .Newsletter-container .Newsletter-wrapper {
+  max-width: 1150px;
+  margin: auto;
+  padding: 100px 30px;
+  background-color: #f46150;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+}
+.Newsletter .Newsletter-container .Newsletter-wrapper h2 {
+  color: #fff;
+  padding-bottom: 30px;
+}
+.Newsletter .Newsletter-container .Newsletter-wrapper form {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  width: 45%;
+}
+.Newsletter .Newsletter-container .Newsletter-wrapper form input {
+  width: 100%;
+  padding: 12px 25px;
+  color: #fff;
+  font-weight: 600;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  outline: none;
+  font-size: 1.6rem;
+}
+.Newsletter .Newsletter-container .Newsletter-wrapper form input::-moz-placeholder {
+  color: #fff;
+}
+.Newsletter .Newsletter-container .Newsletter-wrapper form input:-ms-input-placeholder {
+  color: #fff;
+}
+.Newsletter .Newsletter-container .Newsletter-wrapper form input::placeholder {
+  color: #fff;
+}
+.Newsletter .Newsletter-container .Newsletter-wrapper form .News-btn {
+  font-size: 1.8rem;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #f46150;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.Newsletter .Newsletter-container .Newsletter-wrapper form .News-btn:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* ----------------- /Newsletter-style ---------------------- */
+/* ----------------- footer-style ---------------------- */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #ffebe9;
+  padding-top: 250px;
+  margin-top: -150px;
+}
+footer .footer-container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1.5fr;
+  grid-gap: 30px;
+  padding-bottom: 50px;
+}
+footer .footer-container .About-foot {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  gap: 50px;
+}
+footer .footer-container .About-foot .About-icon ul {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+footer .footer-container .About-foot .About-icon ul li {
+  font-size: 1.8rem;
+  color: #f46150;
+}
+footer .footer-container .Link-items ul {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+footer .footer-container .Link-items ul a {
+  font-size: 1.8rem;
+  color: #212121;
+  transition: all 0.3s ease;
+}
+footer .footer-container .Link-items ul a:hover {
+  color: #f46150;
+}
+footer .footer-container .Info-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+footer .footer-container .Info-items .InfoLeft p {
+  font-size: 1.6rem;
+  width: 80%;
+}
+footer .footer-container .Info-items .InfoRight p {
+  font-size: 1.6rem;
+}
+footer .footBottom .footBottom-container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 30px 30px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+footer .footBottom .footBottom-container p {
+  font-size: 1.6rem;
+}
+
+/* ----------------- /footer-style ---------------------- */
 @media (max-width: 1050px) {
   .Important .Important-title p {
     width: 60%;
@@ -625,6 +772,9 @@ p {
     grid-template-areas: "l l l l l l a a a a a a" ". . . b b b b b b . . .";
     gap: 30px;
   }
+  .testimonial .testimonial-title h2 {
+    width: 80%;
+  }
   .shop .shop-container {
     padding: 50px 30px;
     grid-template-columns: 1.5fr 1.5fr;
@@ -632,6 +782,34 @@ p {
   }
   .shop .shop-container .shopLeft img {
     width: 100%;
+  }
+  .Newsletter .Newsletter-container {
+    padding: 0 30px;
+  }
+  .Newsletter .Newsletter-container .Newsletter-wrapper form {
+    width: 60%;
+  }
+  footer .footer-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  footer .footer-container .About-foot {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  footer .footer-container .Link-items ul {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  footer .footer-container .Info-items {
+    width: 80%;
+    margin: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
 }
 @media (max-width: 768px) {
@@ -714,6 +892,12 @@ p {
     row-gap: 80px;
     padding: 50px 20px;
   }
+  .testimonial .testimonial-title {
+    padding: 0 20px;
+  }
+  .testimonial .testimonial-title h2 {
+    width: 95%;
+  }
   .testimonial .testimonial-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -734,6 +918,45 @@ p {
   }
   .shop .shop-container .shopRight p {
     font-size: 1.6rem;
+  }
+  .Newsletter .Newsletter-container {
+    padding: 0 20px;
+  }
+  .Newsletter .Newsletter-container .Newsletter-wrapper {
+    text-align: center;
+  }
+  .Newsletter .Newsletter-container .Newsletter-wrapper h2 {
+    font-size: 4rem;
+  }
+  .Newsletter .Newsletter-container .Newsletter-wrapper form {
+    width: 80%;
+  }
+  footer .footer-container {
+    padding: 0 20px;
+    padding-bottom: 50px;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  footer .footer-container .About-foot {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    gap: 30px;
+  }
+  footer .footer-container .Link-items ul {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  footer .footer-container .Info-items {
+    width: 100%;
+    margin: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
 }
 @media (max-width: 568px) {
@@ -873,6 +1096,54 @@ p {
   }
   .shop .shop-container .shopRight p {
     font-size: 1.6rem;
+  }
+  .Newsletter .Newsletter-container {
+    padding: 0 10px;
+  }
+  .Newsletter .Newsletter-container .Newsletter-wrapper form {
+    width: 95%;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    gap: 25px;
+  }
+  .Newsletter .Newsletter-container .Newsletter-wrapper form .News-btn {
+    width: 150px;
+    height: 50px;
+    margin: auto;
+  }
+  footer .footer-container {
+    padding: 0 10px;
+    padding-bottom: 50px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  footer .footer-container .About-foot {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    gap: 30px;
+  }
+  footer .footer-container .Link-items ul {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  footer .footer-container .Link-items ul a {
+    font-size: 1.6rem;
+  }
+  footer .footer-container .Info-items {
+    width: 100%;
+    margin: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
 }
 @media (max-width: 450px) {
@@ -1054,6 +1325,78 @@ p {
     font-size: 1.4rem;
   }
   .shop .shop-container .shopRight .shop-btn {
+    font-size: 1.4rem;
+  }
+  .Newsletter .Newsletter-container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 10px;
+  }
+  .Newsletter .Newsletter-container .Newsletter-wrapper {
+    padding: 60px 30px;
+  }
+  .Newsletter .Newsletter-container .Newsletter-wrapper form {
+    width: 95%;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    gap: 25px;
+  }
+  .Newsletter .Newsletter-container .Newsletter-wrapper form .News-btn {
+    width: 150px;
+    height: 45px;
+    margin: auto;
+    font-size: 1.4rem;
+  }
+  .Newsletter .Newsletter-container .Newsletter-wrapper h2 {
+    font-size: 3rem;
+  }
+  footer .footer-container {
+    padding: 0 10px;
+    padding-bottom: 50px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  footer .footer-container .About-foot {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    gap: 30px;
+  }
+  footer .footer-container .About-foot .About-icon ul li {
+    font-size: 1.4rem;
+  }
+  footer .footer-container .Link-items ul {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  footer .footer-container .Link-items ul a {
+    font-size: 1.4rem;
+  }
+  footer .footer-container .Info-items {
+    width: 100%;
+    margin: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  footer .footer-container .Info-items .InfoLeft p {
+    font-size: 1.4rem;
+  }
+  footer .footer-container .Info-items .InfoRight p {
+    font-size: 1.4rem;
+  }
+  footer .footBottom .footBottom-container {
+    padding: 30px 10px;
+  }
+  footer .footBottom .footBottom-container p {
     font-size: 1.4rem;
   }
 }/*# sourceMappingURL=main.css.map */
