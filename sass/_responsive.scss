@@ -1,0 +1,300 @@
+@media (max-width: 1050px) {
+    .Important {
+        .Important-title {
+            p {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .Important {
+        .Important-title {
+            p {
+                width: 65%;
+            }
+        }
+
+        .Important-container {
+            max-width: 1150px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                'O O O O O O T T T T T T'
+                'F F F F F F F F F F F F';
+
+            .Important-items:nth-child(3) {
+                p {
+                    width: 30%;
+
+                }
+            }
+        }
+    }
+
+    .Offer {
+        .offer-container {
+            .offer-itemsLeft {
+                h2 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .class{
+        .class-container{
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 60px;
+            .class-items{
+                padding: 100px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Important {
+        .Important-title {
+            p {
+                width: 80%;
+            }
+        }
+
+        .Important-container {
+            .Important-items:nth-child(3) {
+                p {
+                    width: 34%;
+
+                }
+            }
+        }
+    }
+
+    .Offer {
+        .offer-container {
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 20px;
+            grid-template-areas:
+                'R R R R R R R R R R R R'
+                'L L L L L L L L L L L L';
+            padding: 0 20px;
+
+            .offer-itemsLeft {
+                h2 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .class{
+        width: 100%;
+        height: auto;
+        .class-title{
+            max-width: 1150px;
+            margin: auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            .classRight{
+                p{
+                    font-size: 1.6rem;
+                }
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .Important {
+        .Important-title {
+            h2 {
+                font-size: 4rem;
+            }
+
+            p {
+                width: 90%;
+            }
+        }
+
+        .Important-container {
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                'O O O O O O O O O O O O'
+                'T T T T T T T T T T T T'
+                'F F F F F F F F F F F F';
+            justify-items: center;
+            padding: 50px 10px;
+
+            .Important-items:nth-child(3) {
+                p {
+                    width: 70%;
+
+                }
+            }
+
+            .Important-items {
+                .Important-info {
+                    p {
+                        max-width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    .Offer {
+        .offer-container {
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 20px;
+            grid-template-areas:
+                'R R R R R R R R R R R R'
+                'L L L L L L L L L L L L';
+            text-align: center;
+            padding: 0 10px;
+
+            .offer-itemsLeft {
+                h2 {
+                    width: 100%;
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    .class{
+        .class-title{
+            padding: 0 10px;
+            text-align: center;
+            .classLeft{
+                h2{
+                    font-size: 4rem;
+                }
+            }
+            .classRight{
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .class-container{
+            padding: 0 10px;
+            padding-top: 50px;
+            grid-template-columns: repeat(1,1fr);
+            .class-items{
+                padding: 140px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .class{
+        .class-container{
+            .class-items{
+                padding: 100px 20px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 378px) {
+    .Important {
+        .Important-title {
+            padding: 0 10px;
+
+            img {
+                width: 50px;
+            }
+
+            h2 {
+                font-size: 3.2rem;
+            }
+
+            p {
+                width: 95%;
+                font-size: 1.4rem;
+            }
+        }
+
+        .Important-container {
+            .Important-items {
+                .Important-info {
+                    h3 {
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    .Offer {
+        .offer-container {
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 20px;
+            grid-template-areas:
+                'R R R R R R R R R R R R'
+                'L L L L L L L L L L L L';
+            text-align: center;
+            padding: 0 10px;
+
+            .offer-itemsLeft {
+                h2 {
+                    width: 100%;
+                    font-size: 3rem;
+                }
+
+                p {
+                    width: 95%;
+                    font-size: 1.4rem;
+                    padding-top: 15px;
+                }
+
+                .offer-btn {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .class{
+        .class-title{
+            text-align: center;
+            grid-gap: 0;
+            .classLeft{
+                h2{
+                    font-size: 3.2rem;
+                }
+            }
+            .classRight{
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .class-container{
+            .class-items{
+                padding: 85px 20px;
+                .class-info{
+                    h3{
+                        font-size: 2.3rem;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+/* ----------------- Important-style ---------------------- */
+.Important {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+
+    .Important-title {
+        max-width: 1150px;
+        margin: auto;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        grid-gap: 5px;
+
+        img {
+            width: 60px;
+        }
+
+        p {
+            font-size: 1.6rem;
+            color: $dark-gray;
+            width: 38%;
+            margin: auto;
+            padding-top: 15px;
+        }
+    }
+
+    .Important-container {
+        max-width: 1150px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            'O O O O T T T T F F F F';
+        grid-gap: 30px;
+        text-align: center;
+        padding: 50px 30px;
+
+        .One-g {
+            grid-area: O;
+        }
+
+        .Two-g {
+            grid-area: T;
+        }
+
+        .Four-g {
+            grid-area: F;
+        }
+
+        .Important-items {
+            .Important-img {
+                img {
+                    width: 80px;
+                }
+            }
+
+            .Important-info {
+                h3 {
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    color: $primary;
+                    font-family: $font-family;
+                    padding-top: 10px;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    width: 70%;
+                    margin: auto;
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* ----------------- /Important-style ---------------------- */
+
+/* ----------------- Offer-style ---------------------- */
+.Offer {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+
+    .offer-container {
+        max-width: 1150px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            'L L L L L R R R R R R R';
+        grid-gap: 50px;
+        padding: 50px 30px;
+
+        .offer-itemsLeft {
+            align-self: center;
+            grid-area: L;
+
+            h2 {
+                width: 80%;
+            }
+
+            p {
+                padding-top: 20px;
+                padding-bottom: 30px;
+                font-size: 1.6rem;
+            }
+
+            .offer-btn {
+                @include btn;
+
+                &:hover {
+                    @include Aqua($aquamarine);
+                }
+            }
+        }
+
+        .offer-itemsRight {
+            grid-area: R;
+
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+/* ----------------- /Offer-style ---------------------- */
+
+/* ----------------- Class-style ---------------------- */
+.class{
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 50px 0;
+    .class-title{
+        max-width: 1150px;
+        margin: auto;
+        padding: 0 30px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-gap: 30px;
+        .classRight{
+            p{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .class-container{
+        max-width: 1150px;
+        margin: auto;
+        padding: 0 30px;
+        padding-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+        .class-items{
+            background: url(/image/6336adc3841f513aba02e05a_Classes\ Holder\ .webp);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 60px 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            .class-overlay{
+                position: absolute;
+                top: -20px;
+                left: 20px;
+                width:65px;
+                height: 60px;
+                background-color: $primary;
+                display: grid;
+                place-items: center;
+                border-radius: 10px;
+                span{
+                    font-size: 1.6rem;
+                    color: #fff;
+                    font-weight: 500;
+                }
+            }
+            .class-info{
+                    p{
+                        font-size: 1.7rem;
+                        color: $dark-gray;
+                    }
+            }
+        }
+    }
+}
+/* ----------------- /Class-style ---------------------- */
