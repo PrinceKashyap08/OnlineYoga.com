@@ -64,6 +64,64 @@ p {
 }
 
 /* ---------------------- /Classes-style -----------------------  */
+/* ----------------- Header-style ---------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  z-index: 100000;
+}
+.header .navbar {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 30px;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.header .navbar .nav-menu {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.header .navbar .nav-menu a {
+  font-size: 1.6rem;
+  color: black;
+  transition: 0.3s ease;
+}
+.header .navbar .nav-menu a:hover {
+  color: #f46150;
+}
+.header .navbar .nav-btn {
+  padding: 12px 30px;
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: 0.5px;
+  border: 1px solid #26c5ab;
+  background-color: #26c5ab;
+  transition: 0.5s ease;
+  border-radius: 50px;
+}
+.header .navbar .nav-btn:hover {
+  color: #26c5ab;
+  background-color: #ffffff;
+  color: #26c5ab;
+}
+.header .navbar .hamburger {
+  display: none;
+}
+.header .navbar .nav-mobile {
+  display: none;
+}
+
+/* ----------------- /Header-style ---------------------- */
 /* ----------------- Important-style ---------------------- */
 .Important {
   width: 100%;
@@ -159,7 +217,7 @@ p {
   letter-spacing: 0.5px;
   border: 1px solid #26c5ab;
   background-color: #26c5ab;
-  transform: 0.5s ease;
+  transition: 0.5s ease;
   border-radius: 50px;
 }
 .Offer .offer-container .offer-itemsLeft .offer-btn:hover {
@@ -309,7 +367,7 @@ p {
   letter-spacing: 0.5px;
   border: 1px solid #26c5ab;
   background-color: #26c5ab;
-  transform: 0.5s ease;
+  transition: 0.5s ease;
   border-radius: 50px;
 }
 .beginner .beginner-container .beginnerLeft .health-btn:hover {
@@ -353,7 +411,7 @@ p {
   letter-spacing: 0.5px;
   border: 1px solid #26c5ab;
   background-color: #26c5ab;
-  transform: 0.5s ease;
+  transition: 0.5s ease;
   border-radius: 50px;
   background-color: #f46150;
   border: 1px solid #f46150;
@@ -458,7 +516,7 @@ p {
   letter-spacing: 0.5px;
   border: 1px solid #26c5ab;
   background-color: #26c5ab;
-  transform: 0.5s ease;
+  transition: 0.5s ease;
   border-radius: 50px;
   background-color: #f46150;
   border: 1px solid #f46150;
@@ -565,7 +623,7 @@ p {
   letter-spacing: 0.5px;
   border: 1px solid #26c5ab;
   background-color: #26c5ab;
-  transform: 0.5s ease;
+  transition: 0.5s ease;
   border-radius: 50px;
   background-color: #f46150;
   border: 1px solid #f46150;
@@ -728,6 +786,61 @@ footer .footBottom .footBottom-container p {
   }
 }
 @media (max-width: 992px) {
+  .header {
+    height: 60px;
+  }
+  .header .navbar .nav-menu {
+    display: none;
+  }
+  .header .navbar .nav-btn {
+    display: none;
+  }
+  .header .navbar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .header .navbar .nav-mobile {
+    position: absolute;
+    display: block;
+    left: -100%;
+    top: 0;
+    width: 40%;
+    background-color: white;
+  }
+  .header .navbar .nav-mobile .nav-wrapper {
+    width: 100%;
+    height: 100vh;
+  }
+  .header .navbar .nav-mobile .nav-wrapper .nav-top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 20px;
+  }
+  .header .navbar .nav-mobile .nav-wrapper .nav-top .navTop-logo img {
+    width: 100px;
+  }
+  .header .navbar .nav-mobile .nav-wrapper .nav-top .navTop-close {
+    cursor: pointer;
+  }
+  .header .navbar .nav-mobile .nav-wrapper .navMobile-link ul {
+    padding: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    gap: 30px;
+  }
+  .header .navbar .nav-mobile .nav-wrapper .navMobile-link ul li a {
+    font-size: 1.6rem;
+    color: black;
+  }
+  .header .navbar .nav-mobile .nav-wrapper .navMobile-link ul li a:hover {
+    color: #f46150;
+  }
   .Important .Important-title p {
     width: 65%;
   }
