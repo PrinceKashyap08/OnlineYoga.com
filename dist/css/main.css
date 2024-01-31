@@ -122,6 +122,97 @@ p {
 }
 
 /* ----------------- /Header-style ---------------------- */
+/* ----------------- Hero-style ---------------------- */
+.hero {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  padding: 0 30px;
+}
+.hero .hero-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.hero .hero-container .hero-items .hero-img {
+  height: 680px;
+}
+.hero .hero-container .hero-items .hero-img::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.hero .hero-container .hero-items .hero-info {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+}
+.hero .hero-container .hero-items .hero-info h1 {
+  font-size: 7rem;
+  color: white;
+  width: 90%;
+  margin: auto;
+  font-family: "Cormorant Garamond", serif;
+}
+.hero .hero-container .hero-items .hero-info h1 span {
+  color: #f46150;
+}
+.hero .hero-container .hero-items .hero-info p {
+  font-size: 1.8rem;
+  color: white;
+}
+.hero .hero-container .hero-items .hero-info .hero-links {
+  padding-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  gap: 20px;
+}
+.hero .hero-container .hero-items .hero-info .hero-links .hero-btn {
+  padding: 12px 30px;
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: 0.5px;
+  border: 1px solid #f46150;
+  background-color: #f46150;
+  transition: 0.5s ease;
+  border-radius: 50px;
+}
+.hero .hero-container .hero-items .hero-info .hero-links .hero-btn:hover {
+  color: #f46150;
+  background-color: transparent;
+}
+.hero .hero-container .hero-items .hero-info .hero-links .hero-btn:nth-child(2) {
+  padding: 12px 30px;
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: 0.5px;
+  border: 1px solid white;
+  background-color: transparent;
+  transition: 0.5s ease;
+  border-radius: 50px;
+}
+.hero .hero-container .hero-items .hero-info .hero-links .hero-btn:nth-child(2):hover {
+  border: 1px solid #f46150;
+  background-color: #f46150;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #f46150;
+}
+
+/* ----------------- /Hero-style ---------------------- */
 /* ----------------- Important-style ---------------------- */
 .Important {
   width: 100%;
@@ -135,6 +226,7 @@ p {
   place-items: center;
   text-align: center;
   grid-gap: 5px;
+  padding-top: 120px;
 }
 .Important .Important-title img {
   width: 60px;
