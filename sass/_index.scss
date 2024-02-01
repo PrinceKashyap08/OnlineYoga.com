@@ -35,9 +35,13 @@
         }
         .hamburger{
             display: none;
-        }
-        .nav-mobile{
-            display: none;
+            cursor: pointer;
+            .line{
+                width: 35px;
+                height: 3px;
+                margin: 7px;
+                background-color: #111;
+            }
         }
     }
 }
@@ -53,6 +57,7 @@
         max-width: 1200px;
         margin: auto;
         .hero-items{
+            position: relative;
             .hero-img{
                 height: 680px;
                 &::after{
@@ -67,29 +72,28 @@
             }
             .hero-info{
                 position: absolute;
-                top: 45%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                text-align: center;
+                top: 30%;
+                left: 5%;
+                text-align: start;
                 z-index: 100;
                 h1{
-                    font-size: 7rem;
+                    font-size: 6rem;
                     color: $white;
                     width: 90%;
-                    margin: auto;
                     font-family: $font-family;
                     span{
                         color: $primary;
                     }
                 }
                 p{
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
+                    width: 60%;
                     color: $white;
                 }
                 .hero-links{
                     padding-top: 20px;
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-start;
                     gap: 20px;
                     .hero-btn{
                         padding: 12px 30px;

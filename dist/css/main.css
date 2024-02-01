@@ -116,9 +116,13 @@ p {
 }
 .header .navbar .hamburger {
   display: none;
+  cursor: pointer;
 }
-.header .navbar .nav-mobile {
-  display: none;
+.header .navbar .hamburger .line {
+  width: 35px;
+  height: 3px;
+  margin: 7px;
+  background-color: #111;
 }
 
 /* ----------------- /Header-style ---------------------- */
@@ -132,6 +136,9 @@ p {
 .hero .hero-container {
   max-width: 1200px;
   margin: auto;
+}
+.hero .hero-container .hero-items {
+  position: relative;
 }
 .hero .hero-container .hero-items .hero-img {
   height: 680px;
@@ -147,32 +154,31 @@ p {
 }
 .hero .hero-container .hero-items .hero-info {
   position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  top: 30%;
+  left: 5%;
+  text-align: start;
   z-index: 100;
 }
 .hero .hero-container .hero-items .hero-info h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   color: white;
   width: 90%;
-  margin: auto;
   font-family: "Cormorant Garamond", serif;
 }
 .hero .hero-container .hero-items .hero-info h1 span {
   color: #f46150;
 }
 .hero .hero-container .hero-items .hero-info p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  width: 60%;
   color: white;
 }
 .hero .hero-container .hero-items .hero-info .hero-links {
   padding-top: 20px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   gap: 20px;
 }
 .hero .hero-container .hero-items .hero-info .hero-links .hero-btn {
@@ -882,7 +888,28 @@ footer .footBottom .footBottom-container p {
     height: 60px;
   }
   .header .navbar .nav-menu {
-    display: none;
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    background-color: white;
+    transition: 0.5s ease;
+  }
+  .header .navbar .nav-menu.active {
+    left: 0;
+  }
+  .header .navbar .hamburger.active .line:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+  }
+  .header .navbar .hamburger.active .line:nth-child(2) {
+    background: transparent;
+  }
+  .header .navbar .hamburger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   .header .navbar .nav-btn {
     display: none;
@@ -891,47 +918,8 @@ footer .footBottom .footBottom-container p {
     display: block;
     cursor: pointer;
   }
-  .header .navbar .nav-mobile {
-    position: absolute;
-    display: block;
-    left: -100%;
-    top: 0;
-    width: 40%;
-    background-color: white;
-  }
-  .header .navbar .nav-mobile .nav-wrapper {
-    width: 100%;
-    height: 100vh;
-  }
-  .header .navbar .nav-mobile .nav-wrapper .nav-top {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
-    padding: 20px;
-  }
-  .header .navbar .nav-mobile .nav-wrapper .nav-top .navTop-logo img {
-    width: 100px;
-  }
-  .header .navbar .nav-mobile .nav-wrapper .nav-top .navTop-close {
-    cursor: pointer;
-  }
-  .header .navbar .nav-mobile .nav-wrapper .navMobile-link ul {
-    padding: 20px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    gap: 30px;
-  }
-  .header .navbar .nav-mobile .nav-wrapper .navMobile-link ul li a {
-    font-size: 1.6rem;
-    color: black;
-  }
-  .header .navbar .nav-mobile .nav-wrapper .navMobile-link ul li a:hover {
-    color: #f46150;
+  .hero {
+    top: 60px;
   }
   .Important .Important-title p {
     width: 65%;
@@ -1018,6 +1006,18 @@ footer .footBottom .footBottom-container p {
   }
 }
 @media (max-width: 768px) {
+  .header .navbar {
+    padding: 0 20px;
+  }
+  .header .navbar .nav-menu {
+    padding: 30px 20px;
+  }
+  .hero {
+    padding: 0 20px;
+  }
+  .hero .hero-container .hero-items .hero-info h1 {
+    font-size: 5rem;
+  }
   .Important .Important-title p {
     width: 80%;
   }
@@ -1165,6 +1165,44 @@ footer .footBottom .footBottom-container p {
   }
 }
 @media (max-width: 568px) {
+  .header .navbar {
+    padding: 0 10px;
+  }
+  .header .navbar .nav-menu {
+    padding: 30px 10px;
+  }
+  .header .navbar .nav-menu a {
+    font-size: 1.4rem;
+  }
+  .hero {
+    padding: 0 15px;
+  }
+  .hero .hero-container .hero-items .hero-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-align: center;
+  }
+  .hero .hero-container .hero-items .hero-info h1 {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+  .hero .hero-container .hero-items .hero-info h1 span {
+    font-size: 4.5rem;
+  }
+  .hero .hero-container .hero-items .hero-info p {
+    margin: auto;
+    width: 80%;
+  }
+  .hero .hero-container .hero-items .hero-info .hero-links {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
   .Important .Important-title h2 {
     font-size: 4rem;
   }
@@ -1357,6 +1395,39 @@ footer .footBottom .footBottom-container p {
   }
 }
 @media (max-width: 378px) {
+  .hero {
+    padding: 0 10px;
+  }
+  .hero .hero-container .hero-items .hero-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-align: center;
+  }
+  .hero .hero-container .hero-items .hero-info h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .hero .hero-container .hero-items .hero-info h1 span {
+    font-size: 3.5rem;
+  }
+  .hero .hero-container .hero-items .hero-info p {
+    margin: auto;
+    width: 90%;
+    font-size: 1.4rem;
+  }
+  .hero .hero-container .hero-items .hero-info .hero-links {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .hero .hero-container .hero-items .hero-info .hero-links .hero-links .hero-btn {
+    font-size: 1.4rem;
+  }
   .Important .Important-title {
     padding: 0 10px;
   }
